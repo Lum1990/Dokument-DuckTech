@@ -1,5 +1,11 @@
 # DuckTech - Data Migrering
-v. 0.1.0
+
+v. 0.1.0 Datum: 30/04/2026 Författare: Mikael
+Dokument Version
+|**Version**|**Datum**|**Ändring**|**Författare**|
+|:---|:---|:---|:---|
+|0.1.0| 30/04/2026|Skapad|Mikael|
+|0.1.1| 30/04/2026|La till Dokuments version|Mikael|
 
 ## Om DuckTech
 DuckTech förser företag med modern och säker Cyber- och IT-infrastruktur. Försvarsmakten har länge varit DuckTech´s största kund men har under de senaste årens poltiska 
@@ -27,8 +33,9 @@ IT-infrastruktur.
 |:---|:---|:---|
 |**Kravansvarig**| Ahmed| Regelbunden kontakt med FMV för att säkerställa att krav uppfylls och meddela projektledningen om ändringar sker. |
 |**Presentation**| Jonas| Tillhandahåller information om förändringar i DuckTechs verksamhet till de anställda och utbildar personalen gällande nya rutiner och verktyg. |
-|**Tekninkansvarig**| Patrik|Ansvarar för att lokaler och hårdvara uppfyller säkerhetskraven. Överser byggnationen av serverhallar. |
+|**Teknikansvarig**| Patrik|Ansvarar för att lokaler och hårdvara uppfyller säkerhetskraven. Överser byggnationen av serverhallar. |
 |**Dokumentation**| Mikael|Utför dokumentation av arbetets gång. |
+|**Testare**| Abdinasir |Testning av system och hårdvara. |
 
 ### 4. Projektmodell: Hybrid (Vattenfall + Scrum)
 Då projektet har en längre tidsram, >1år, kommer planeringen använda en hybridmodell, vattenfallsmodellen och Scrum. Projektet kommer delas upp i mindre projekt månadsvis, 
