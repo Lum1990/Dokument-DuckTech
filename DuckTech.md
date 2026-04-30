@@ -25,7 +25,7 @@ IT-infrastruktur.
 |:---|:---|:---|
 |**Kravansvarig**| Ahmed| Regelbunden kontakt med FMV för att säkerställa att krav uppfylls och meddela projektledningen om ändringar sker. |
 |**Presentation**| Jonas| Tillhandahåller information om förändringar i DuckTechs verksamhet till de anställda och utbildar personalen gällande nya rutiner och verktyg. |
-|**TekninkAnsvarig**| Patrik|Ansvarar för att lokaler och hårdvara uppfyller säkerhetskraven. Överser byggnationen av serverhallar. |
+|**Tekninkansvarig**| Patrik|Ansvarar för att lokaler och hårdvara uppfyller säkerhetskraven. Överser byggnationen av serverhallar. |
 |**Dokumentation**| Mikael|Utför dokumentation av arbetets gång. |
 
 ### 4. Projektmodell: Hybrid (Vattenfall + Scrum)
