@@ -42,7 +42,24 @@ rekrytering av ny ansställd för att täcka den tappade rollen. Nya säkerhetsk
 säkerställa att kraven på personal uppfylls.
 Även utbildning inom de nya systemen kommer ske löpande när projektet börjar närma sig slutfasen.
 Eventuell rekrytering kommer ske för att täcka underhåll av serverhallar och för hantering av incidenter, tex driftstop av server eller dataintrång.
+ITIL kommer vara centralt för förändringarna och fortsatt verkasmhet. Change, problem och incident management kommer ha stort fokus när
+företager går från publikmolntjänst till lokal. 
+#### 5.1 Change
+Det kommer vara en stor omställning för DuckTech, för att få en bra övergång till det nya arbettsättet kommer personalen löpande utbildas 
+och nya rutiner kommer implementeras. Behörigheter måste bestämmas, vem som har behörighet till vad.
+#### 5.2 Problem
+Vid en stor omställning är det nästan omöjligt att undvika problem, det är viktigt att uppdaga problem i ett tidigt skede eller omstäntigheter som kan leda
+till framtida problem. Här kommer noggrann dokumentation vara viktigt för att kunna se var problemet har sitt ursprng och vad man kan göra för att undvika det
+i framtiden.
+#### 5.3 Incident
+Sätta upp en tydlig plan vid driftstop eller dataintrång. Vem ansvarar för drift av servrar? Vem hanterar eventuella dataintrång.
+Hur hanteras gammal hårdvara?
 
+### 6. Riskanalys
+Djupgående analys om lokaler, personal, hård och mjukvara. Lokaler för serverhallar och arbetsutrymmen kommer anpassas efter FMV´s krav på säkerhet.
+Handlingsplan för eventuella dataintrång och driftstop av servrar. Stort fokus kommer läggas på redundans och high availability. 
+
+### 7. Planering och kommunikaiton
 
 
 
