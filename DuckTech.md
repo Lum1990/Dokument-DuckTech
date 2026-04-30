@@ -2,10 +2,11 @@
 ## Om DuckTech
 DuckTech förser företag med modern och säker Cyber- och IT-infrastruktur. Försvarsmakten har länge varit DuckTech´s största kund men har under de senaste årens poltiska 
 utveckling ökat sina krav på säkerhet och suviränitet. För att fortsatt få leverera till försvarsmakten måste DuckTech anpassa sin verksamhet efter dessa krav.
+
 Anställda ca: 100
 
 ### 1. Orsak till migrering.
-DuckTech´s nuvarande molntjänst hos Google Workspace ses inte längre som ett säkert alternativ.Försvarsmakten
+DuckTech´s nuvarande molntjänst hos Google Workspace ses inte längre som ett säkert alternativ. Försvarsmakten
 anser inte längre att Google Workspace är ett säket alternativ pga, det politiska läget i USA.
 
 Huvudsyftet men migrationen är att skapa en säker och isolerad miljö för vidareutveckling av Cyber- och IT-infrastruktur för militärt bruk. 
@@ -34,6 +35,14 @@ följa den övergripande planeringen. Det är viktigt att varje delmoment följe
 ska kunna starta.  
 
 Scrum kommer tillämpas för varje delmoment för att eventuella förändringar ska kunna hanteras snabbt och flexibelt för att leva upp till den övergripande tidsplanen. 
+
+### 5. Anpassning och utbildning
+Säkerhetsprövning kommer ske löpande under projektets 4 första månader. Om någon av de anställda brister i säkerhetskonrtollen får DuckTech starta
+rekrytering av ny ansställd för att täcka den tappade rollen. Nya säkerhetskrav kommer ställas på de anställda och utbildning kommer ske under projektets gång för att 
+säkerställa att kraven på personal uppfylls.
+Även utbildning inom de nya systemen kommer ske löpande när projektet börjar närma sig slutfasen.
+Eventuell rekrytering kommer ske för att täcka underhåll av serverhallar och för hantering av incidenter, tex driftstop av server eller dataintrång.
+
 
 
 
