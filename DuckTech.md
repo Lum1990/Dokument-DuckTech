@@ -148,6 +148,63 @@ Handlingsplan för eventuella dataintrång och driftstop av servrar. Stort fokus
 |**Installationsfiber**|1 rulle|CommScope|200m, Förbindelse mellan hall 1 och 2|
 
 
+```mermaid
+flowchart LR
+    Users["Klienter / anvandare"]
+    Admin["Drift / admin"]
+    Monitor["Overvakning / loggning"]
+    Offsite["Off-site lagring<br/>40x LTO-9 band"]
+
+    subgraph H1["Serverhall 1 - Rack 1"]
+        H1Access["Access / management<br/>2x Dell N2248PX-ON"]
+        H1Core["Server / SAN fabric<br/>2x Dell S4112F-ON"]
+        H1Compute["Compute-kluster<br/>4x Dell PowerEdge"]
+        H1HSM["Sakerhetsmodul<br/>2x Thales HSM"]
+        H1Storage["Primar lagring<br/>1x Dell PowerVault ME5024<br/>9x 3.84TB SSD + 15x 12TB HDD"]
+        H1Backup["Backup till disk<br/>1x Dell PowerEdge R750xs<br/>8x 20TB HDD"]
+        H1Infra["Rack/kraft/drift<br/>1x APC 42U<br/>2x PDU<br/>2x UPS<br/>1x KVM"]
+    end
+
+    subgraph H2["Serverhall 2 - Rack 2"]
+        H2Access["Access / management<br/>2x Dell N2248PX-ON"]
+        H2Core["Server / SAN fabric<br/>2x Dell S4112F-ON"]
+        H2Compute["Compute-kluster<br/>4x Dell PowerEdge"]
+        H2HSM["Sakerhetsmodul<br/>2x Thales HSM"]
+        H2Storage["Primar lagring<br/>1x Dell PowerVault ME5024<br/>9x 3.84TB SSD + 15x 12TB HDD"]
+        H2Backup["Backup / band<br/>1x Dell PowerVault ML3<br/>2x LTO-9 drives<br/>8x 20TB HDD enligt spec - placering bekraftas"]
+        H2Infra["Rack/kraft/drift<br/>1x APC 42U<br/>2x PDU<br/>2x UPS<br/>1x KVM"]
+    end
+
+    Users -- "Bla Cat6a<br/>klientdata" --> H1Access
+    Users -- "Bla Cat6a<br/>klientdata" --> H2Access
+
+    Admin -- "Gul Cat6a<br/>management/iDRAC" --> H1Access
+    Admin -- "Gul Cat6a<br/>management/iDRAC" --> H2Access
+
+    Monitor -- "Management / logg / larm" --> H1Access
+    Monitor -- "Management / logg / larm" --> H2Access
+
+    H1Access -- "Klient- och managementnat" --> H1Compute
+    H2Access -- "Klient- och managementnat" --> H2Compute
+
+    H1Compute -- "Aqua Cat6a<br/>server/SAN" --> H1Core
+    H1Storage -- "Aqua Cat6a<br/>lagring" --> H1Core
+    H1HSM -- "Saker systemtrafik" --> H1Core
+    H1Backup -- "Gron Cat6a<br/>backupnat" --> H1Core
+
+    H2Compute -- "Aqua Cat6a<br/>server/SAN" --> H2Core
+    H2Storage -- "Aqua Cat6a<br/>lagring" --> H2Core
+    H2HSM -- "Saker systemtrafik" --> H2Core
+    H2Backup -- "Gron Cat6a<br/>backupnat" --> H2Core
+
+    H1Core <== "Installationsfiber 200m<br/>interconnect mellan hallar<br/>replikering / kluster / backup" ==> H2Core
+
+    H1Backup -- "Backupkopior" --> H2Backup
+    H2Backup -- "Export / rotation" --> Offsite
+
+```
+
+
 
 
 
