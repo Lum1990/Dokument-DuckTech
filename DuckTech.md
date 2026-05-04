@@ -274,7 +274,7 @@ flowchart LR
 ```
 
 
-# Logisk nätverkskarta
+### Logisk nätverkskarta
 
 
 ```mermaid
@@ -316,7 +316,7 @@ flowchart TB
 ```
 
 
-# Backup och off-site-karta
+### Backup och off-site-karta
 
 
 ```mermaid
