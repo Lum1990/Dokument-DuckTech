@@ -16,12 +16,14 @@ v. 0.1.3 Datum: 04/05/2026 Författare: Mikael
 
 ## Innehållsförteckning
 **1.** Bakgrund till migrering<br>
-**2.** Säker dokumentation och ITIL<br>
-**3.** Roller och ansvarsområden<br>
-**4.** Projektmodell: Hybrid (Vattenfall + Scrum)<br>
-**5.** Anpassning och utbildning<br>
-**6.** Riskanalys<br>
-**7.** Teknisk Systemspecifikation<br>
+**2.** Syfte och mål 
+4. Föreslagen lösning 
+**3.** Säker dokumentation och ITIL<br>
+**4.** Roller och ansvarsområden<br>
+**5.** Projektmodell: Hybrid (Vattenfall + Scrum)<br>
+**6.** Anpassning och utbildning<br>
+**7.** Riskanalys<br>
+**8.** Teknisk Systemspecifikation<br>
 
 
 ## Om DuckTech
@@ -38,7 +40,7 @@ privat server, försvarmakten baserar sin analys pga av det politiska läget i U
 Huvudsyftet men migrationen är att skapa en säker och isolerad miljö för vidareutveckling av Cyber- och IT-infrastruktur för militärt bruk. 
 Under detta projekt kommer omfattande riskanalys genomföras av lokaler, personal, hård och mjukvara för att säkerställa kraven från FMV.
 
-### 3. Syfte och mål 
+### 2. Syfte och mål 
 
 Syftet med projektet är att ta fram en plan för hur DuckTech kan migrera sina viktigaste tjänster från Google-baserade molntjänster till en lokal servermiljö på ett säkert och kontrollerat sätt. 
 Lösningen ska ge företaget bättre kontroll över dokument, projektfiler, användarkonton, behörigheter, backup och återställning. 
@@ -49,7 +51,7 @@ Användarkonton och behörigheter ska administreras internt, och känslig inform
 Projektet omfattar filserver, behörighetshantering, backup, VPN för säker fjärråtkomst, grundläggande nätverksskydd samt rutiner för drift och support. 
 Projektet omfattar inte utveckling av DuckTechs simulatorprogram, utan fokuserar på IT-infrastruktur och informationshantering. 
 
-### 4. Föreslagen lösning 
+### 3. Föreslagen lösning 
 
 DuckTech ska införa en lokal servermiljö där filer, användarkonton, behörigheter och backup hanteras internt. Miljön ska skyddas med brandvägg, behörighetsstyrning, VPN och stark autentisering för säker fjärråtkomst. 
 Det ger företaget bättre kontroll över sin information och minskar beroendet av externa molntjänster. 
@@ -60,13 +62,13 @@ ehörigheter ska styras enligt principen minsta möjliga åtkomst, vilket inneb�
 För att lösningen ska vara säker och driftsäker ska backup köras regelbundet och återställning testas. Systemet ska även logga viktiga händelser, till exempel inloggningar, behörighetsändringar och administratörsåtgärder. 
 Servermiljön ska kunna uppdateras och underhållas utan att verksamheten påverkas mer än nödvändigt. 
 
-### 2. Säker dokumentation och ITIL
+### 4. Säker dokumentation och ITIL
 Djupgående dokumentation kommer ske löpande under projektets gång och efter att projektet är avklarat, uppdatering av dokumentationen när verksamheten utvecklas 
 kommer också vara av stor vikt. Förvaring av dokument ska säkerställas så obehöriga ej får tillgång till dokumentationen, krav: SUA (Säkerhetsskyddad upphandling).
 Server konfigurering kommer dokumenteras av samtliga servrar och backup kommer göras. Nya rutiner för dokumentation kommer krävas av de anställda då det är mycket viktigt
 om ändringar sker.
  
-### 3. Roller och ansvarsområden
+### 5. Roller och ansvarsområden
 |Roll|Namn|Ansvar |
 |:---|:---|:---|
 |**Kravansvarig**| Ahmed| Regelbunden kontakt med FMV för att säkerställa att krav uppfylls och meddela projektledningen om ändringar sker. |
@@ -99,7 +101,7 @@ När testerna är godkända flyttas data stegvis från Google Drive till den lok
 När migreringen är verifierad kan den gamla molnlösningen begränsas. Lösningen dokumenteras och driftinstruktioner lämnas över till IT-ansvariga. 
 Efter införandet krävs löpande underhåll, övervakning, behörighetshantering och förbättringar för att miljön ska fortsätta vara säker och stabil. 
 
-### 5. Anpassning och utbildning
+### 7. Anpassning och utbildning
 Säkerhetsprövning kommer ske löpande under projektets 4 första månader. Om någon av de anställda brister i säkerhetskonrtollen får DuckTech starta
 rekrytering av ny ansställd för att täcka den tappade rollen. Nya säkerhetskrav kommer ställas på de anställda och utbildning kommer ske under projektets gång för att 
 säkerställa att kraven på personal uppfylls.
@@ -107,18 +109,18 @@ säkerställa att kraven på personal uppfylls.
 Eventuell rekrytering kommer ske för att täcka underhåll av serverhallar och för hantering av incidenter, tex driftstop av server eller dataintrång.
 ITIL kommer vara centralt för förändringarna och fortsatt verkasmhet. Change, problem och incident management kommer ha stort fokus när
 företager går från publikmolntjänst till lokal. 
-#### 5.1 Change
+#### 7.1 Change
 Det kommer vara en stor omställning för DuckTech, för att få en bra övergång till det nya arbettsättet kommer personalen löpande utbildas 
 och nya rutiner kommer implementeras. Behörigheter måste bestämmas, vem som har behörighet till vad.
-#### 5.2 Problem
+#### 7.2 Problem
 Vid en stor omställning är det nästan omöjligt att undvika problem, det är viktigt att uppdaga problem i ett tidigt skede eller omstäntigheter som kan leda
 till framtida problem. Här kommer noggrann dokumentation vara viktigt för att kunna se var problemet har sitt ursprng och vad man kan göra för att undvika det
 i framtiden.
-#### 5.3 Incident
+#### 7.3 Incident
 Sätta upp en tydlig plan vid driftstop eller dataintrång. Vem ansvarar för drift av servrar? Vem hanterar eventuella dataintrång.
 Hur hanteras gammal hårdvara?
 
-### 6. Riskanalys
+### 8. Riskanalys
 Djupgående analys om lokaler, personal, hård och mjukvara. Lokaler för serverhallar och arbetsutrymmen kommer anpassas efter FMV´s krav på säkerhet.
 Handlingsplan för eventuella dataintrång och driftstop av servrar. Stort fokus kommer läggas på redundans och high availability. 
 
@@ -156,7 +158,7 @@ Handlingsplan för eventuella dataintrång och driftstop av servrar. Stort fokus
 |**Brand**|Brand utbryter i serverhall/övrig lokal.|2|5|10|Installation av Siemens – Sinorix 1230.|
 |**Temperatur**|Överhetning av servrar.|3|5|15|CRAC(Computer Room Air Conditioner) i kombination med sensorer för att känna av temperatur avvikelser.|
 
-### 7. Migreringsplan 
+### 9. Migreringsplan 
 
 Migreringen ska genomföras kontrollerat och stegvis för att minska risken för dataförlust, felaktiga behörigheter och driftstörningar. Först exporteras och inventeras material från Google Drive. 
 Filer och mappar sorteras efter projekt, avdelning och känslighetsnivå. Gammalt, duplicerat eller irrelevant material kan arkiveras separat innan migreringen genomförs. 
@@ -167,7 +169,7 @@ Innan full migrering genomförs bör DuckTech göra en pilotmigrering med en min
 Efter migreringen ska filantal, mappstruktur, behörigheter och åtkomst kontrolleras. Användarna ska bekräfta att de kommer åt rätt filer och att de inte kommer åt information de saknar behörighet till. 
 Först när migreringen är verifierad bör Google-lösningen stängas för aktiv användning eller begränsas till arkivläge. 
 
-### 7. Teknisk Systemspecifikation
+### 10. Teknisk Systemspecifikation
 
 |Vara|Antal|Modell|Beskrivning|
 |:---|:---|:---|:---|
@@ -313,10 +315,73 @@ flowchart LR
 ```
 
 
+### 11. Backup och återställning 
+
+Backup ska genomföras dagligen för viktiga filer, projektdata och systemkonfigurationer. Minst en backupkopia bör vara skyddad mot radering, kryptering eller annan påverkan från den ordinarie servermiljön, till exempel genom offlinebackup eller annan isolerad lagring. 
+Det minskar risken för permanent dataförlust vid tekniska fel, misstag eller säkerhetsincidenter. 
+
+DuckTech behöver även en tydlig återställningsrutin. Rutinen ska beskriva vem som ansvarar för återställning, vilka system och filer som prioriteras, hur snabbt data ska kunna återställas och hur återställningen ska verifieras. 
+Det bör också finnas dokumenterade steg för hur IT-personal ska agera vid dataförlust eller driftstörning. 
+
+Återställningstest ska genomföras regelbundet för att säkerställa att backupkopiorna fungerar. En backup är inte tillräcklig om den inte går att återställa inom rimlig tid. Därför ska resultat från återställningstester dokumenteras och följas upp som en del av den löpande driften. 
+
+### 12. Test och acceptans 
+
+Innan driftsättning ska lösningen testas både tekniskt och funktionellt. De tekniska testerna ska kontrollera serverstatus, nätverksanslutning, brandvägg, VPN, backup, återställning och loggning. 
+Syftet är att säkerställa att infrastrukturen fungerar stabilt och att viktiga säkerhets- och driftfunktioner är aktiva. 
+
+De funktionella testerna ska kontrollera att användare kan logga in, öppna rätt mappar och arbeta med filer på den lokala filservern. Testerna ska även säkerställa att användare inte kommer åt mappar eller information som de saknar behörighet till. 
+Därför bör tester genomföras med konton från olika roller och avdelningar, till exempel utveckling, administration, projektledning och IT-administration. 
+
+Acceptanskriterierna bör vara att rätt användare når rätt information, att obehörig åtkomst blockeras, att VPN fungerar för fjärranvändare, att backup och återställning fungerar samt att loggning och driftinstruktioner finns dokumenterade. 
+När dessa kriterier är uppfyllda kan lösningen godkännas för driftsättning. 
+
+### 13. Drift och support enligt ITIL 
+
+Efter driftsättning ska ITIL användas som stöd för förvaltning av servermiljön. ITIL hjälper DuckTech att arbeta strukturerat med support, incidenter, problem, förändringar och förbättringar. Målet är att miljön ska kunna drivas säkert och stabilt över tid. 
+
+**Service desk** 
+Användare ska ha en tydlig kontaktväg för supportärenden. Ärenden kan till exempel handla om inloggning, åtkomst till mappar, VPN-problem eller återställning av filer. 
+Service desk fungerar som första kontaktpunkt och ser till att ärenden registreras, prioriteras och skickas vidare vid behov. 
+
+**Incidenthantering** 
+Incidenter ska hanteras snabbt för att återställa normal drift och minska påverkan på verksamheten. Exempel på incidenter är att filservern inte svarar, att en användare inte kommer åt en mapp eller att VPN ligger nere. 
+
+**Problemhantering** 
+Om samma typ av fel återkommer ska grundorsaken analyseras. Om flera användare ofta får VPN-problem kan orsaken till exempel vara felaktig konfiguration, kapacitetsproblem eller klientprogramvara. 
+Problemhantering minskar risken för att samma incident uppstår igen. 
+
+**Change management** 
+Förändringar i servermiljön ska planeras, riskbedömas och godkännas innan de genomförs. Exempel på förändringar är systemuppdateringar, ändrade behörigheter, ny backupstrategi eller förändringar i nätverket. Det minskar risken för att ändringar skapar nya driftproblem. 
+
+**Configuration management** 
+DuckTech bör dokumentera servrar, system, nätverk, konton, grupper och viktiga beroenden. Dokumentationen gör felsökning, support, säkerhetsgranskning och framtida ändringar enklare. 
+
+**Continual improvement** 
+Efter införandet bör DuckTech regelbundet följa upp incidenter, backupresultat, användarnas behov och säkerhetsrutiner. På så sätt kan lösningen förbättras över tid och anpassas efter nya krav från verksamheten. 
 
 
+### 14. Dokumentation och överlämning 
 
+När projektet avslutas ska DuckTech ha teknisk dokumentation över den nya servermiljön. Dokumentationen ska beskriva serverstruktur, filstruktur, behörighetsgrupper, katalogtjänst, backup, VPN, nätverkssäkerhet, loggning och supportflöden. 
+Den ska också innehålla instruktioner för vanliga driftuppgifter, till exempel att skapa användare, ändra behörigheter, hantera grupper och återställa filer från backup. 
 
+Överlämningen ska ske från projektet till driftansvariga. IT-ansvariga ska få tillgång till dokumentation, driftinstruktioner, kontaktvägar och information om eventuella kvarstående åtgärder. 
+På så sätt kan den nya miljön förvaltas på ett kontrollerat sätt efter driftsättning. 
+
+Detta passar både vattenfallsmodellen och ITIL. Vattenfallsmodellen avslutas med dokumentation och överlämning av en färdig lösning, medan ITIL-processerna tar vid i den löpande driften. 
+
+ 
+
+### 15. Slutsats 
+
+DuckTech bör gå från Google-baserade molntjänster till en lokal servermiljö för att få bättre kontroll över känslig information, behörigheter, backup och drift. 
+Den föreslagna lösningen ger företaget en tydligare teknisk struktur, stärker informationssäkerheten och minskar beroendet av externa molntjänster. 
+
+Vattenfallsmodellen ger projektet en tydlig arbetsordning från förstudie och kravanalys till design, implementering, test, driftsättning och överlämning. Det gör migreringen enklare att planera, följa upp och kvalitetssäkra. 
+
+ITIL ger struktur för den fortsatta driften genom service desk, incidenthantering, problemhantering, change management, konfigurationshantering och kontinuerlig förbättring. 
+illsammans ger vattenfallsmodellen och ITIL DuckTech både en plan för införandet och rutiner för att förvalta lösningen säkert och stabilt efteråt. 
 
 
 
