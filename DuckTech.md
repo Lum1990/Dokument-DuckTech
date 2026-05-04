@@ -205,6 +205,7 @@ Först när migreringen är verifierad bör Google-lösningen stängas för akti
 |**Övervakning**|15|Axis Q3536-LVE|Övervakningskamera med vandalskydd IK10+|
 |**Brandsläckning**|2|Siemens – Sinorix 1230|Kemisksläckning för bränder i elektronisk utrustning|
 |**Kylning**|2|Vertiv - Liebert PCW|Kylning med indirekt frikyla från utomhusluft|
+|**Säkerhetsdörrar**|8|ASSA ABLOY|Marknadsledande dörr med motorlås|
 
 
 
@@ -353,7 +354,8 @@ När dessa kriterier är uppfyllda kan lösningen godkännas för driftsättning
 
 ### 14. Drift och support enligt ITIL 
 
-Efter driftsättning ska ITIL användas som stöd för förvaltning av servermiljön. ITIL hjälper DuckTech att arbeta strukturerat med support, incidenter, problem, förändringar och förbättringar. Målet är att miljön ska kunna drivas säkert och stabilt över tid. 
+Efter driftsättning ska ITIL användas som stöd för förvaltning av servermiljön. ITIL hjälper DuckTech att arbeta strukturerat med support, incidenter, problem, förändringar och förbättringar. 
+Målet är att miljön ska kunna drivas säkert och stabilt över tid. 
 
 **Service desk** 
 Användare ska ha en tydlig kontaktväg för supportärenden. Ärenden kan till exempel handla om inloggning, åtkomst till mappar, VPN-problem eller återställning av filer. 
@@ -367,7 +369,8 @@ Om samma typ av fel återkommer ska grundorsaken analyseras. Om flera användare
 Problemhantering minskar risken för att samma incident uppstår igen. 
 
 **Change management** 
-Förändringar i servermiljön ska planeras, riskbedömas och godkännas innan de genomförs. Exempel på förändringar är systemuppdateringar, ändrade behörigheter, ny backupstrategi eller förändringar i nätverket. Det minskar risken för att ändringar skapar nya driftproblem. 
+Förändringar i servermiljön ska planeras, riskbedömas och godkännas innan de genomförs. Exempel på förändringar är systemuppdateringar, ändrade behörigheter, ny backupstrategi eller förändringar i nätverket. 
+Det minskar risken för att ändringar skapar nya driftproblem. 
 
 **Configuration management** 
 DuckTech bör dokumentera servrar, system, nätverk, konton, grupper och viktiga beroenden. Dokumentationen gör felsökning, support, säkerhetsgranskning och framtida ändringar enklare. 
