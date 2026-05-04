@@ -1,12 +1,13 @@
 # DuckTech - Data Migrering
 
-v. 0.1.3 Datum: 04/05/2026 Författare: Mikael
+v. 1.1.3 Datum: 04/05/2026 Författare: Mikael
 
 <details>
  <summary>Dokuments ändringar </summary>
 
 |**Version**|**Datum**|**Ändring**|**Författare**|
 |:---|:---|:---|:---|
+|1.1.3| 04/05/2026|Lagt till Jonas dokumentation|Mikael|
 |0.1.3| 04/05/2026|Har lagt till Teknisk Systemspecifikation|Mikael|
 |0.1.2| 04/05/2026|Uppdaterat dokumentation, börjat med riskanalys|Mikael|
 |0.1.1| 30/04/2026|La till dokument version|Mikael|
