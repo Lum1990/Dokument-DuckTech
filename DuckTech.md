@@ -1,12 +1,13 @@
 # DuckTech - Data Migrering
 
-v. 1.1.3 Datum: 04/05/2026 Författare: Mikael
+v. 1.1.4 Datum: 04/05/2026 Författare: Mikael
 
 <details>
  <summary>Dokuments ändringar </summary>
 
 |**Version**|**Datum**|**Ändring**|**Författare**|
 |:---|:---|:---|:---|
+|1.1.4| 04/05/2026|Lite rättstavning|Mikael|
 |1.1.3| 04/05/2026|Lagt till Jonas dokumentation|Mikael|
 |0.1.3| 04/05/2026|Har lagt till Teknisk Systemspecifikation|Mikael|
 |0.1.2| 04/05/2026|Uppdaterat dokumentation, börjat med riskanalys|Mikael|
@@ -34,15 +35,15 @@ v. 1.1.3 Datum: 04/05/2026 Författare: Mikael
 **16.** Slutsats<br>
 
 ## Om DuckTech
-DuckTech förser företag med modern och säker Cyber- och IT-infrastruktur. Försvarsmakten har länge varit DuckTech´s största kund men har under de senaste årens poltiska 
-utveckling ökat sina krav på säkerhet och suviränitet. För att fortsatt få leverera till försvarsmakten måste DuckTech anpassa sin verksamhet efter dessa krav.
+DuckTech förser företag med modern och säker Cyber- och IT-infrastruktur. Försvarsmakten har länge varit DuckTechs största kund men har under de senaste årens poltiska 
+utveckling ökat sina krav på säkerhet och suviränitet. För att fortsatt få leverera till Försvarsmakten måste DuckTech anpassa sin verksamhet efter dessa krav.
 
 Anställda ca: 100
 
 ### 1. Bakgrund till migrering.
-DuckTech´s nuvarande molntjänst hos Google Workspace ses inte längre som ett säkert alternativ. Försvarsmakten
-har höjt sina krav på säkerhet och suviränitet, för att uppfuylla detta har DuckTech valt att skapa sin egen molntjänst och migrera sin data från Google Workspace till
-privat server, försvarmakten baserar sin analys pga av det politiska läget i USA och omvärlden.
+DuckTechs nuvarande molntjänst hos Google Workspace ses inte längre som ett säkert alternativ. Försvarsmakten
+har höjt sina krav på säkerhet och suveränitet, för att uppfuylla detta har DuckTech valt att skapa sin egen molntjänst och migrera sin data från Google Workspace till
+privat server, Försvarmakten baserar sin analys pga det politiska läget i USA och omvärlden.
 
 Huvudsyftet men migrationen är att skapa en säker och isolerad miljö för vidareutveckling av Cyber- och IT-infrastruktur för militärt bruk. 
 Under detta projekt kommer omfattande riskanalys genomföras av lokaler, personal, hård och mjukvara för att säkerställa kraven från FMV.
@@ -72,10 +73,11 @@ Servermiljön ska kunna uppdateras och underhållas utan att verksamheten påver
 ### 4. Säker dokumentation
 Djupgående dokumentation kommer ske löpande under projektets gång och efter att projektet är avklarat, uppdatering av dokumentationen när verksamheten utvecklas 
 kommer också vara av stor vikt. Förvaring av dokument ska säkerställas så obehöriga ej får tillgång till dokumentationen, krav: SUA (Säkerhetsskyddad upphandling).
-Server konfigurering kommer dokumenteras av samtliga servrar och backup kommer göras. Nya rutiner för dokumentation kommer krävas av de anställda då det är mycket viktigt
+Serverkonfigurering kommer dokumenteras av samtliga servrar och backup kommer göras. Nya rutiner för dokumentation kommer krävas av de anställda då det är mycket viktigt
 om ändringar sker.
  
 ### 5. Roller och ansvarsområden
+
 |Roll|Namn|Ansvar |
 |:---|:---|:---|
 |**Kravansvarig**| Ahmed| Regelbunden kontakt med FMV för att säkerställa att krav uppfylls och meddela projektledningen om ändringar sker. |
@@ -109,13 +111,14 @@ När migreringen är verifierad kan den gamla molnlösningen begränsas. Lösnin
 Efter införandet krävs löpande underhåll, övervakning, behörighetshantering och förbättringar för att miljön ska fortsätta vara säker och stabil. 
 
 ### 7. Anpassning och utbildning
+
 Säkerhetsprövning kommer ske löpande under projektets 4 första månader. Om någon av de anställda brister i säkerhetskonrtollen får DuckTech starta
-rekrytering av ny ansställd för att täcka den tappade rollen. Nya säkerhetskrav kommer ställas på de anställda och utbildning kommer ske under projektets gång för att 
+rekrytering av ny anställd för att täcka den tappade rollen. Nya säkerhetskrav kommer ställas på de anställda och utbildning kommer ske under projektets gång för att 
 säkerställa att kraven på personal uppfylls.
 Även utbildning inom de nya systemen kommer ske löpande när projektet börjar närma sig slutfasen.
 Eventuell rekrytering kommer ske för att täcka underhåll av serverhallar och för hantering av incidenter, tex driftstop av server eller dataintrång.
 ITIL kommer vara centralt för förändringarna och fortsatt verkasmhet. Change, problem och incident management kommer ha stort fokus när
-företager går från publikmolntjänst till lokal. 
+företaget går från publikmolntjänst till lokal. 
 #### 7.1 Change
 Det kommer vara en stor omställning för DuckTech, för att få en bra övergång till det nya arbettsättet kommer personalen löpande utbildas 
 och nya rutiner kommer implementeras. Behörigheter måste bestämmas, vem som har behörighet till vad.
@@ -128,14 +131,14 @@ Sätta upp en tydlig plan vid driftstop eller dataintrång. Vem ansvarar för dr
 Hur hanteras gammal hårdvara?
 
 ### 8. Riskanalys
-Djupgående analys om lokaler, personal, hård och mjukvara. Lokaler för serverhallar och arbetsutrymmen kommer anpassas efter FMV´s krav på säkerhet.
+Djupgående analys om lokaler, personal, hård och mjukvara. Lokaler för serverhallar och arbetsutrymmen kommer anpassas efter FMVs krav på säkerhet.
 Handlingsplan för eventuella dataintrång och driftstop av servrar. Stort fokus kommer läggas på redundans och high availability. 
 
 ### Risk: Planering och byggnation
 |Risk|Beskrivning|Sannolikhet|Konsekvens|Risknivå|Åtgärd|
 |:---|:---|:---|:---|:---|:---|
 |**Säkerhetsprövning**|Nyckelpersonal nekas säkerhetsklassning.|2|4|8|Ha konsulter reda för att täcka behovet tills ny medarbetare kan anställas.|
-|**Hårdvara**|Brist på hårdvara pga värdsläget och stora inköp till AI-datacenter.|4|4|16|Planera inköp i ett tidigt skede.|
+|**Hårdvara**|Brist på hårdvara pga världsläget och stora inköp till AI-datacenter.|4|4|16|Planera inköp i ett tidigt skede.|
 |**Spräckt budget**|Nya krav från FMV.|2|3|6|Change management och tydlig kommunikation med DuchTech om krav ändras.|
 |**Serverhallar**|Förseningar och dolda fel.|3|3|9|Noggrann inventering av lokaler och tidsbuffert.|
 
@@ -151,8 +154,8 @@ Handlingsplan för eventuella dataintrång och driftstop av servrar. Stort fokus
 |:---|:---|:---|:---|:---|:---|
 |**Dataläcka**|Data exponeras mot internet under migration.|2|5|10|Använd VPN vid export.|
 |**Big Bang-haveri**|De nya servrarna orkar inte med lasten vid driftsättning.|1|5|5|Genomför migrering stegvis och ha roll back planerat.|
-|**Korrupt data**|Data korrumperas under export.|2|5|10|Använd haschar för att kontrollera data förre och efter flytt.|
-|**Nytt system**|Personal kan inte nya systemet.|1|5|5|Introdusera nya system stegvis och utbilda personal.|
+|**Korrupt data**|Data korrumperas under export.|2|5|10|Använd haschar för att kontrollera data före och efter flytt.|
+|**Nytt system**|Personal kan inte nya systemet.|1|5|5|Introducera nya system stegvis och utbilda personal.|
 
 ### Risk: Drift och administration
 |Risk|Beskrivning|Sannolikhet|Konsekvens|Risknivå|Åtgärd|
@@ -194,13 +197,13 @@ Först när migreringen är verifierad bör Google-lösningen stängas för akti
 |**Rackskåp**|2|APC NetShelter SX 42U|1 per serverhall|
 |**PDU**|4|APC Metered Rack PDU|2 per serverhall|
 |**UPS**|4|APC Smart-UPS SRT 3000VA|2 per serverhall|
-|**KVM-konsol**|2|Dell FPM185|1 per servehall|
+|**KVM-konsol**|2|Dell FPM185|1 per serverhall|
 |**Cat6a-kablar (Blå)**|100|CommScope|1.5m, Klientdata/Användare|
 |**Cat6a-kablar (Gul)**|40|CommScope|1.5m, Management (iDRAC)|
 |**Cat6a-kablar (Grön)**|40|CommScope|2m, Backup-nätverk|
 |**Cat6a-kablar (Aqua)**|60|CommScope|3m, SAN & Server-kopplingar|
 |**Patchpaneler (24-port)**|10|CommScope|Ordning och reda|
-|**Vägguttag (Dubbla)**|100|CommScope|Kontors tillbehör|
+|**Vägguttag (Dubbla)**|100|CommScope|Kontorstillbehör|
 |**Installationsfiber**|1 rulle|CommScope|200m, Förbindelse mellan hall 1 och 2|
 |**Cat6a Installationskabel**|15 rullar|CommScope|Kablar för att ansluta kontor till server|
 |**Övervakning**|15|Axis Q3536-LVE|Övervakningskamera med vandalskydd IK10+|
