@@ -18,7 +18,7 @@ v. 0.1.3 Datum: 04/05/2026 Författare: Mikael
 **1.** Bakgrund till migrering<br>
 **2.** Syfte och mål<br>
 **3.** Föreslagen lösning<br>
-**4.** Säker dokumentation och ITIL<br>
+**4.** Säker dokumentation<br>
 **5.** Roller och ansvarsområden<br>
 **6.** Genomförande enligt vattenfallsmodellen<br>
 **7.** Anpassning och utbildning<br>
@@ -187,7 +187,7 @@ Först när migreringen är verifierad bör Google-lösningen stängas för akti
 |**Backupschassi**|1|Dell PowerEdge R750xs|Backup för serverhall 1|
 |**Backup Disk**|16|20TB HDD SAS 7.2K|Backup disk, 8 per serverhall|
 |**Switch**|4|Dell Networking S4112F-ON|2 per serverhall|
-|**Switch**|4|Dell N2248PX-ON|2 per serverhall|
+|**Switch**|6|Dell N2248PX-ON|3 per serverhall|
 |**Backupschassi**|1|Dell PowerVault ML3|Backup för serverhall 2 med Tape Library med 2x LTO-9 drives|
 |**Off-site lagring**|40|LTO-9 Band (Media)|För off-site lagring/lång tids lagring|
 |**Rackskåp**|2|APC NetShelter SX 42U|1 per serverhall|
@@ -198,7 +198,15 @@ Först när migreringen är verifierad bör Google-lösningen stängas för akti
 |**Cat6a-kablar (Gul)**|40|CommScope|1.5m, Management (iDRAC)|
 |**Cat6a-kablar (Grön)**|40|CommScope|2m, Backup-nätverk|
 |**Cat6a-kablar (Aqua)**|60|CommScope|3m, SAN & Server-kopplingar|
+|**Patchpaneler (24-port)**|10|CommScope|Ordning och reda|
+|**Vägguttag (Dubbla)**|100|CommScope|Kontors tillbehör|
 |**Installationsfiber**|1 rulle|CommScope|200m, Förbindelse mellan hall 1 och 2|
+|**Cat6a Installationskabel**|15 rullar|CommScope|Kablar för att ansluta kontor till server|
+|**Övervakning**|15|Axis Q3536-LVE|Övervakningskamera med vandalskydd IK10+|
+|**Brandsläckning**|2|Siemens – Sinorix 1230|Kemisksläckning för bränder i elektronisk utrustning|
+
+
+
 
 ### 11. Övergripande miljökarta
 
