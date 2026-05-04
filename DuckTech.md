@@ -38,16 +38,34 @@ privat server, försvarmakten baserar sin analys pga av det politiska läget i U
 Huvudsyftet men migrationen är att skapa en säker och isolerad miljö för vidareutveckling av Cyber- och IT-infrastruktur för militärt bruk. 
 Under detta projekt kommer omfattande riskanalys genomföras av lokaler, personal, hård och mjukvara för att säkerställa kraven från FMV.
 
+### 3. Syfte och mål 
+
+Syftet med projektet är att ta fram en plan för hur DuckTech kan migrera sina viktigaste tjänster från Google-baserade molntjänster till en lokal servermiljö på ett säkert och kontrollerat sätt. 
+Lösningen ska ge företaget bättre kontroll över dokument, projektfiler, användarkonton, behörigheter, backup och återställning. 
+
+Målet är att DuckTechs dokument och projektfiler ska lagras på en lokal filserver i stället för i externa molntjänster. 
+Användarkonton och behörigheter ska administreras internt, och känslig information ska skyddas genom lokal lagring, begränsade behörigheter, säker nätverksåtkomst och regelbunden backup. 
+
+Projektet omfattar filserver, behörighetshantering, backup, VPN för säker fjärråtkomst, grundläggande nätverksskydd samt rutiner för drift och support. 
+Projektet omfattar inte utveckling av DuckTechs simulatorprogram, utan fokuserar på IT-infrastruktur och informationshantering. 
+
+### 4. Föreslagen lösning 
+
+DuckTech ska införa en lokal servermiljö där filer, användarkonton, behörigheter och backup hanteras internt. Miljön ska skyddas med brandvägg, behörighetsstyrning, VPN och stark autentisering för säker fjärråtkomst. 
+Det ger företaget bättre kontroll över sin information och minskar beroendet av externa molntjänster. 
+
+Den nya miljön ska bestå av en lokal filserver för dokument och projektfiler, en central katalogtjänst för användarkonton och grupper, exempelvis Active Directory, samt en backupserver eller annan backuplösning för säkerhetskopiering. B
+ehörigheter ska styras enligt principen minsta möjliga åtkomst, vilket innebär att användare bara får tillgång till den information de behöver för sitt arbete. 
+
+För att lösningen ska vara säker och driftsäker ska backup köras regelbundet och återställning testas. Systemet ska även logga viktiga händelser, till exempel inloggningar, behörighetsändringar och administratörsåtgärder. 
+Servermiljön ska kunna uppdateras och underhållas utan att verksamheten påverkas mer än nödvändigt. 
+
 ### 2. Säker dokumentation och ITIL
 Djupgående dokumentation kommer ske löpande under projektets gång och efter att projektet är avklarat, uppdatering av dokumentationen när verksamheten utvecklas 
 kommer också vara av stor vikt. Förvaring av dokument ska säkerställas så obehöriga ej får tillgång till dokumentationen, krav: SUA (Säkerhetsskyddad upphandling).
 Server konfigurering kommer dokumenteras av samtliga servrar och backup kommer göras. Nya rutiner för dokumentation kommer krävas av de anställda då det är mycket viktigt
 om ändringar sker.
-
-ITIL kommer tillämpas för att DuckTech på ett effektivt och skalbart sätt ska kunna utveckla sin verksamhet efter behov. 
-Stor fokus kommer läggas på Change Management eftersom stora förändringar inom företaget kommer ske med eget ansvar för tex. backups, underhåll av serverhallar och övrig 
-IT-infrastruktur. 
-
+ 
 ### 3. Roller och ansvarsområden
 |Roll|Namn|Ansvar |
 |:---|:---|:---|
@@ -57,13 +75,29 @@ IT-infrastruktur.
 |**Dokumentation**| Mikael|Utför dokumentation av arbetet. |
 |**Testare**| Abdinasir |Testning av system och hårdvara. |
 
-### 4. Projektmodell: Hybrid (Vattenfall + Scrum)
-Då projektet har en längre tidsram, >1år, kommer planeringen använda en hybridmodell, vattenfallsmodellen och Scrum. Projektet kommer delas upp i mindre projekt månadsvis, 
-med undantag av säkerhetsprövning av personalen. Vattenfallsmodellen fungerar bra för att få en överblick av projektet i sin helhet, mindre projekt kommer 
-följa den övergripande planeringen. Det är viktigt att varje delmoment följer “vattenfallets” helhet då överliggande projekt är kritiska för att underliggande projekt 
-ska kunna starta.  
+### 6. Genomförande enligt vattenfallsmodellen 
 
-Scrum kommer tillämpas för varje delmoment för att eventuella förändringar ska kunna hanteras snabbt och flexibelt för att leva upp till den övergripande tidsplanen. 
+Vattenfallsmodellen passar projektet eftersom arbetet kan delas upp i tydliga faser där varje fas skapar underlag för nästa. Det gör projektet enklare att planera, följa upp och kvalitetssäkra. 
+
+## 6.1 Förstudie och kravinsamling 
+I den första fasen kartläggs nuvarande Google-tjänster, filstruktur, användare, behörigheter, datamängd och säkerhetskrav. Här identifieras vilka data och tjänster som behöver migreras samt vilka delar av miljön som är mest verksamhetskritiska. 
+Resultatet blir en nulägesanalys och en kravspecifikation. 
+
+#### 6.2 Design 
+I designfasen planeras hur den nya servermiljön ska byggas upp. Här tas en teknisk design fram för filserver, katalogtjänst, behörighetsgrupper, VPN, backup, loggning och nätverkssäkerhet. Designen ska kunna användas som grund för implementationen. 
+
+#### 6.3 Implementering 
+Under implementeringen installeras och konfigureras servrar och nödvändiga tjänster. Det omfattar bland annat katalogtjänst, filresurser, grupper, behörigheter, VPN och backup. Därefter kan en testmigrering genomföras med ett begränsat urval av filer. 
+
+#### 6.4 Testning 
+Före driftsättning testas inloggning, filåtkomst, behörigheter, VPN, backup, återställning och loggning. Testerna ska göras med både vanliga användarkonton och administratörskonton för att säkerställa att systemet fungerar korrekt och att rätt åtkomst gäller. 
+
+#### 6.5 Driftsättning 
+När testerna är godkända flyttas data stegvis från Google Drive till den lokala filservern. Användarna informeras om ny filstruktur, inloggning och supportväg. En stegvis övergång minskar risken för driftstörningar och gör det enklare att åtgärda problem. 
+
+#### 6.6 Avslut, överlämning och förvaltning 
+När migreringen är verifierad kan den gamla molnlösningen begränsas. Lösningen dokumenteras och driftinstruktioner lämnas över till IT-ansvariga. 
+Efter införandet krävs löpande underhåll, övervakning, behörighetshantering och förbättringar för att miljön ska fortsätta vara säker och stabil. 
 
 ### 5. Anpassning och utbildning
 Säkerhetsprövning kommer ske löpande under projektets 4 första månader. Om någon av de anställda brister i säkerhetskonrtollen får DuckTech starta
@@ -122,6 +156,17 @@ Handlingsplan för eventuella dataintrång och driftstop av servrar. Stort fokus
 |**Brand**|Brand utbryter i serverhall/övrig lokal.|2|5|10|Installation av Siemens – Sinorix 1230.|
 |**Temperatur**|Överhetning av servrar.|3|5|15|CRAC(Computer Room Air Conditioner) i kombination med sensorer för att känna av temperatur avvikelser.|
 
+### 7. Migreringsplan 
+
+Migreringen ska genomföras kontrollerat och stegvis för att minska risken för dataförlust, felaktiga behörigheter och driftstörningar. Först exporteras och inventeras material från Google Drive. 
+Filer och mappar sorteras efter projekt, avdelning och känslighetsnivå. Gammalt, duplicerat eller irrelevant material kan arkiveras separat innan migreringen genomförs. 
+
+Därefter skapas en motsvarande filstruktur på den lokala filservern. Behörigheter ska kopplas till grupper i katalogtjänsten i stället för till enskilda användare, eftersom det ger enklare administration och bättre kontroll över åtkomst. 
+Innan full migrering genomförs bör DuckTech göra en pilotmigrering med en mindre grupp användare för att testa filstruktur, åtkomst, prestanda och arbetssätt. 
+
+Efter migreringen ska filantal, mappstruktur, behörigheter och åtkomst kontrolleras. Användarna ska bekräfta att de kommer åt rätt filer och att de inte kommer åt information de saknar behörighet till. 
+Först när migreringen är verifierad bör Google-lösningen stängas för aktiv användning eller begränsas till arkivläge. 
+
 ### 7. Teknisk Systemspecifikation
 
 |Vara|Antal|Modell|Beskrivning|
@@ -147,7 +192,7 @@ Handlingsplan för eventuella dataintrång och driftstop av servrar. Stort fokus
 |**Cat6a-kablar (Aqua)**|60|CommScope|3m, SAN & Server-kopplingar|
 |**Installationsfiber**|1 rulle|CommScope|200m, Förbindelse mellan hall 1 och 2|
 
-Overgripande miljokarta
+Övergripande miljökarta
 
 
 ```mermaid
@@ -266,6 +311,7 @@ flowchart LR
     Tape -- "Bandrotation" --> Offsite
 
 ```
+
 
 
 
