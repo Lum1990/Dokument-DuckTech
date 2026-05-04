@@ -147,6 +147,8 @@ Handlingsplan för eventuella dataintrång och driftstop av servrar. Stort fokus
 |**Cat6a-kablar (Aqua)**|60|CommScope|3m, SAN & Server-kopplingar|
 |**Installationsfiber**|1 rulle|CommScope|200m, Förbindelse mellan hall 1 och 2|
 
+Overgripande miljokarta
+
 
 ```mermaid
 flowchart LR
@@ -201,6 +203,67 @@ flowchart LR
 
     H1Backup -- "Backupkopior" --> H2Backup
     H2Backup -- "Export / rotation" --> Offsite
+
+```
+
+
+Logisk natverkskarta
+
+
+```mermaid
+flowchart TB
+    subgraph Z1["Klientzon"]
+        ClientNet["Klientdata / anvandartrafik<br/>Bla Cat6a"]
+    end
+
+    subgraph Z2["Managementzon"]
+        MgmtNet["iDRAC, switchadmin, storageadmin, KVM<br/>Gul Cat6a"]
+    end
+
+    subgraph Z3["Backupzon"]
+        BackupNet["Backup, restore, tape-export<br/>Gron Cat6a"]
+    end
+
+    subgraph Z4["Server- och SAN-zon"]
+        SanNet["Serverfabric, lagring, replikering<br/>Aqua Cat6a + fiber mellan hallar"]
+    end
+
+    subgraph Halls["Serverhall 1 och 2"]
+        Compute["8x Dell PowerEdge"]
+        HSM["4x Thales HSM"]
+        Storage["2x Dell PowerVault ME5024"]
+        Backup["Backupserver + tape library"]
+    end
+
+    ClientNet --> Compute
+    MgmtNet --> Compute
+    MgmtNet --> Storage
+    MgmtNet --> Backup
+    MgmtNet --> HSM
+    BackupNet --> Backup
+    BackupNet --> Storage
+    SanNet --> Compute
+    SanNet --> Storage
+    SanNet --> HSM
+
+```
+
+
+Backup- och off-site-karta
+
+
+```mermaid
+flowchart LR
+    Prod1["Serverhall 1<br/>Compute + ME5024"]
+    Prod2["Serverhall 2<br/>Compute + ME5024"]
+    DiskBackup["Diskbackup<br/>Dell PowerEdge R750xs<br/>16x/8x 20TB HDD enligt slutlig placering"]
+    Tape["Tape Library<br/>Dell PowerVault ML3<br/>2x LTO-9 drives"]
+    Offsite["Off-site / langtidslagring<br/>40x LTO-9 media"]
+
+    Prod1 -- "Gron backuptrafik" --> DiskBackup
+    Prod2 -- "Gron backuptrafik" --> DiskBackup
+    DiskBackup -- "Backupkopior / arkivjobb" --> Tape
+    Tape -- "Bandrotation" --> Offsite
 
 ```
 
