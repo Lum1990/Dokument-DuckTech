@@ -204,6 +204,7 @@ Först när migreringen är verifierad bör Google-lösningen stängas för akti
 |**Cat6a Installationskabel**|15 rullar|CommScope|Kablar för att ansluta kontor till server|
 |**Övervakning**|15|Axis Q3536-LVE|Övervakningskamera med vandalskydd IK10+|
 |**Brandsläckning**|2|Siemens – Sinorix 1230|Kemisksläckning för bränder i elektronisk utrustning|
+|**Kylning**|2|Vertiv - Liebert PCW|Kylning med indirekt frikyla från utomhusluft|
 
 
 
