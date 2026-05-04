@@ -372,14 +372,14 @@ Incidenter ska hanteras snabbt för att återställa normal drift och minska på
 Om samma typ av fel återkommer ska grundorsaken analyseras. Om flera användare ofta får VPN-problem kan orsaken till exempel vara felaktig konfiguration, kapacitetsproblem eller klientprogramvara. 
 Problemhantering minskar risken för att samma incident uppstår igen. 
 
-**Change management** 
+**Förändringsledning** 
 Förändringar i servermiljön ska planeras, riskbedömas och godkännas innan de genomförs. Exempel på förändringar är systemuppdateringar, ändrade behörigheter, ny backupstrategi eller förändringar i nätverket. 
 Det minskar risken för att ändringar skapar nya driftproblem. 
 
-**Configuration management** 
+**konfigurationshantering** 
 DuckTech bör dokumentera servrar, system, nätverk, konton, grupper och viktiga beroenden. Dokumentationen gör felsökning, support, säkerhetsgranskning och framtida ändringar enklare. 
 
-**Continual improvement** 
+**kontinuerlig förbättring** 
 Efter införandet bör DuckTech regelbundet följa upp incidenter, backupresultat, användarnas behov och säkerhetsrutiner. På så sätt kan lösningen förbättras över tid och anpassas efter nya krav från verksamheten. 
 
 
@@ -402,8 +402,8 @@ Den föreslagna lösningen ger företaget en tydligare teknisk struktur, stärke
 
 Vattenfallsmodellen ger projektet en tydlig arbetsordning från förstudie och kravanalys till design, implementering, test, driftsättning och överlämning. Det gör migreringen enklare att planera, följa upp och kvalitetssäkra. 
 
-ITIL ger struktur för den fortsatta driften genom service desk, incidenthantering, problemhantering, change management, konfigurationshantering och kontinuerlig förbättring. 
-illsammans ger vattenfallsmodellen och ITIL DuckTech både en plan för införandet och rutiner för att förvalta lösningen säkert och stabilt efteråt.
+ITIL ger struktur för den fortsatta driften genom service desk, incidenthantering, problemhantering, förändringsledning, konfigurationshantering och kontinuerlig förbättring. 
+Tillsammans ger vattenfallsmodellen och ITIL DuckTech både en plan för införandet och rutiner för att förvalta lösningen säkert och stabilt efteråt.
 
 
 
