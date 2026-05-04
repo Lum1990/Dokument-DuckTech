@@ -16,7 +16,7 @@ v. 0.1.2 Datum: 04/05/2026 Författare: Mikael
 
 ## Innehållsförteckning
 **1.** Bakgrund till migrering<br>
-**2.** Säker dokumentation och ITIL
+**2.** Säker dokumentation och ITIL<br>
 **3.** Roller och ansvarsområden<br>
 **4.** Projektmodell: Hybrid (Vattenfall + Scrum)<br>
 **5.** Anpassning och utbildning<br>
@@ -91,24 +91,36 @@ Handlingsplan för eventuella dataintrång och driftstop av servrar. Stort fokus
 ### Risk: Planering och byggnation
 |Risk|Beskrivning|Sannolikhet|Konsekvens|Risknivå|Åtgärd|
 |:---|:---|:---|:---|:---|:---|
-|**Säkerhetsprövning**|Nyckelpersonal nekas säkerhetsklassning|2|4|8|Ha konsulter reda för att täcka behovet tills ny medarbetare kan anställas.|
-|**Hårdvara**|Brist på hårdvara pga värdsläget och stora inköp till AI-datacenter|4|4|16|Planera inköp i ett tidigt skede.|
-|**Spräckt budget**|Nya krav från FMV|2|3|6|Change management och tydlig kommunikation med DuchTech om krav ändras.|
-|**Serverhallar**|Förseningar och dolda fel|3|3|9|Noggrann inventering av lokaler och tidsbuffert.|
+|**Säkerhetsprövning**|Nyckelpersonal nekas säkerhetsklassning.|2|4|8|Ha konsulter reda för att täcka behovet tills ny medarbetare kan anställas.|
+|**Hårdvara**|Brist på hårdvara pga värdsläget och stora inköp till AI-datacenter.|4|4|16|Planera inköp i ett tidigt skede.|
+|**Spräckt budget**|Nya krav från FMV.|2|3|6|Change management och tydlig kommunikation med DuchTech om krav ändras.|
+|**Serverhallar**|Förseningar och dolda fel.|3|3|9|Noggrann inventering av lokaler och tidsbuffert.|
 
 ### Risk: Nätverk och grundinstallation
 |Risk|Beskrivning|Sannolikhet|Konsekvens|Risknivå|Åtgärd|
 |:---|:---|:---|:---|:---|:---|
 |**Kablage**|Bristande kvalite|1|4|4|Noggrann upphandling och kvalitets kontroll.|
-|**Personalbrist**|Frånvaro pga sjukdom, ledighet eller liknande|2|3|6|Planering och säkerhetsklassad extrapersonal som kan rycka in vid behov.|
-|**Spräckt budget**|Nya krav från FMV|2|3|6|Change management och tydlig kommunikation med DuchTech om krav ändras.|
+|**Personalbrist**|Frånvaro pga sjukdom, ledighet eller liknande.|2|3|6|Planering och säkerhetsklassad extrapersonal som kan rycka in vid behov.|
+|**Spräckt budget**|Nya krav från FMV.|2|4|8|Change management och tydlig kommunikation med DuchTech om krav ändras.|
 
-### Risk: Migration
+### Risk: Migration och övergång till nya system
 |Risk|Beskrivning|Sannolikhet|Konsekvens|Risknivå|Åtgärd|
 |:---|:---|:---|:---|:---|:---|
-|**Dataläcka**|Data exponeras mot internet under migration|2|5|10|Använd VPN vid export.|
-|**Big Bang-haveri**|De nya servrarna orkar inte med lasten vid driftsättning|1|5|5|Genomför migrering stegvis och ha roll back planerat.|
-|**Korrupt data**|Data korrumperas under export|2|5|10|Använd haschar för att kontrollera data förre och efter flytt.|
+|**Dataläcka**|Data exponeras mot internet under migration.|2|5|10|Använd VPN vid export.|
+|**Big Bang-haveri**|De nya servrarna orkar inte med lasten vid driftsättning.|1|5|5|Genomför migrering stegvis och ha roll back planerat.|
+|**Korrupt data**|Data korrumperas under export.|2|5|10|Använd haschar för att kontrollera data förre och efter flytt.|
+|**Nytt system**|Personal kan inte nya systemet.|1|5|5|Introdusera nya system stegvis och utbilda personal.|
+
+### Risk: Drift och administration
+|Risk|Beskrivning|Sannolikhet|Konsekvens|Risknivå|Åtgärd|
+|:---|:---|:---|:---|:---|:---|
+|**Avlyssning**|Elektromagnetiskt läckage gör att data kan läsas utifrån.|3|5|15|Implementera tempest nät och zonindelning.|
+|**Infiltratör**|En anställd med behörighet stjäl krypteringsnycklar.|1|5|5|Tvåmansstyre vid kritiska ändringar och strikt loggning.|
+|**Utbyte av hårdvara**|Data ligger kvar hos Googles eller på gammla diskar.|2|5|10|Kontrollera att data sanitization har utförts och förstör utbytt hårdvara.|
+|**Drift stop**|Server går sönder eller drift stör av strömavbrott.|2|5|10|Säkerställ redundans och HA. UPS för kortare avbrott och diselaggregat för längre avbrott.|
+|**Inbrott**|Obehörig person tar sig in i DuckTechs lokaler.|1|5|5|Larm och passersystem med loggning, kamera övervakning.|
+|**Brand**|Brand utbryter i serverhall/övrig lokal.|2|5|10|Installation av Siemens – Sinorix 1230.|
+|**Temperatur**|Överhetning av servrar.|3|5|15|CRAC(Computer Room Air Conditioner) i kombination med sensorer för att känna av temperatur avvikelser.|
 
 ### 7. Planering och kommunikaiton
 
