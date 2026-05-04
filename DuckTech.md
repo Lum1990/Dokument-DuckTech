@@ -1,18 +1,18 @@
 # DuckTech - Data Migrering
 
-v. 0.1.2 Datum: 04/05/2026 Författare: Mikael
+v. 0.1.3 Datum: 04/05/2026 Författare: Mikael
 
 <details>
  <summary>Dokuments ändringar </summary>
 
 |**Version**|**Datum**|**Ändring**|**Författare**|
 |:---|:---|:---|:---|
+|0.1.3| 04/05/2026|Har lagt till Teknisk Systemspecifikation|Mikael|
 |0.1.2| 04/05/2026|Uppdaterat dokumentation, börjat med riskanalys|Mikael|
 |0.1.1| 30/04/2026|La till dokument version|Mikael|
 |0.1.0| 30/04/2026|Dokument skapat|Mikael|
 
 </details>
-
 
 ## Innehållsförteckning
 **1.** Bakgrund till migrering<br>
@@ -21,7 +21,7 @@ v. 0.1.2 Datum: 04/05/2026 Författare: Mikael
 **4.** Projektmodell: Hybrid (Vattenfall + Scrum)<br>
 **5.** Anpassning och utbildning<br>
 **6.** Riskanalys<br>
-
+**7.** Teknisk Systemspecifikation<br>
 
 
 ## Om DuckTech
@@ -122,7 +122,34 @@ Handlingsplan för eventuella dataintrång och driftstop av servrar. Stort fokus
 |**Brand**|Brand utbryter i serverhall/övrig lokal.|2|5|10|Installation av Siemens – Sinorix 1230.|
 |**Temperatur**|Överhetning av servrar.|3|5|15|CRAC(Computer Room Air Conditioner) i kombination med sensorer för att känna av temperatur avvikelser.|
 
-### 7. Planering och kommunikaiton
+### 7. Teknisk Systemspecifikation
+
+|Vara|Antal|Modell|Beskrivning|
+|:---|:---|:---|:---|
+|**Servernoder**|8|Dell PowerEdge|4 per serverhall|
+|**Hardware Security Modules**|4|Thales|2 per serverhall|
+|**Lagringschassi**|2|Dell PowerVault ME5024|1 per serverhall|
+|**SSD**|18|3.84TB SSD SAS Mixed Use|För system/cache, 9 per serverhall|
+|**HDD**|30|12TB HDD SAS 7.2K|Lagring, 15 per serverhall|
+|**Backupschassi**|1|Dell PowerEdge R750xs|Backup för serverhall 1|
+|**Backup Disk**|16|20TB HDD SAS 7.2K|Backup disk, 8 per serverhall|
+|**Switch**|4|Dell Networking S4112F-ON|2 per serverhall|
+|**Switch**|4|Dell N2248PX-ON|2 per serverhall|
+|**Backupschassi**|1|Dell PowerVault ML3|Backup för serverhall 2 med Tape Library med 2x LTO-9 drives|
+|**Off-site lagring**|40|LTO-9 Band (Media)|För off-site lagring/lång tids lagring|
+|**Rackskåp**|2|APC NetShelter SX 42U|1 per serverhall|
+|**PDU**|4|APC Metered Rack PDU|2 per serverhall|
+|**UPS**|4|APC Smart-UPS SRT 3000VA|2 per serverhall|
+|**KVM-konsol**|2|Dell FPM185|1 per servehall|
+|**Cat6a-kablar (Blå)**|100|CommScope|1.5m, Klientdata/Användare|
+|**Cat6a-kablar (Gul)**|40|CommScope|1.5m, Management (iDRAC)|
+|**Cat6a-kablar (Grön)**|40|CommScope|2m, Backup-nätverk|
+|**Cat6a-kablar (Aqua)**|60|CommScope|3m, SAN & Server-kopplingar|
+|**Installationsfiber**|1 rulle|CommScope|200m, Förbindelse mellan hall 1 och 2|
+
+
+
+
 
 
 
