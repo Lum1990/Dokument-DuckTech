@@ -16,15 +16,21 @@ v. 0.1.3 Datum: 04/05/2026 Författare: Mikael
 
 ## Innehållsförteckning
 **1.** Bakgrund till migrering<br>
-**2.** Syfte och mål 
-4. Föreslagen lösning 
-**3.** Säker dokumentation och ITIL<br>
-**4.** Roller och ansvarsområden<br>
-**5.** Projektmodell: Hybrid (Vattenfall + Scrum)<br>
-**6.** Anpassning och utbildning<br>
-**7.** Riskanalys<br>
-**8.** Teknisk Systemspecifikation<br>
-
+**2.** Syfte och mål<br>
+**3.** Föreslagen lösning<br>
+**4.** Säker dokumentation och ITIL<br>
+**5.** Roller och ansvarsområden<br>
+**6.** Genomförande enligt vattenfallsmodellen<br>
+**7.** Anpassning och utbildning<br>
+**8.** Riskanalys<br>
+**9.** Migreringsplan<br>
+**10.** Teknisk Systemspecifikation<br>
+**11.** Övergripande miljökarta<br>
+**12.** Backup och återställning<br>
+**13.** Test och acceptans<br>
+**14.** Drift och support enligt ITIL<br>
+**15.** Dokumentation och överlämning<br>
+**16.** Slutsats<br>
 
 ## Om DuckTech
 DuckTech förser företag med modern och säker Cyber- och IT-infrastruktur. Försvarsmakten har länge varit DuckTech´s största kund men har under de senaste årens poltiska 
@@ -62,7 +68,7 @@ ehörigheter ska styras enligt principen minsta möjliga åtkomst, vilket inneb�
 För att lösningen ska vara säker och driftsäker ska backup köras regelbundet och återställning testas. Systemet ska även logga viktiga händelser, till exempel inloggningar, behörighetsändringar och administratörsåtgärder. 
 Servermiljön ska kunna uppdateras och underhållas utan att verksamheten påverkas mer än nödvändigt. 
 
-### 4. Säker dokumentation och ITIL
+### 4. Säker dokumentation
 Djupgående dokumentation kommer ske löpande under projektets gång och efter att projektet är avklarat, uppdatering av dokumentationen när verksamheten utvecklas 
 kommer också vara av stor vikt. Förvaring av dokument ska säkerställas så obehöriga ej får tillgång till dokumentationen, krav: SUA (Säkerhetsskyddad upphandling).
 Server konfigurering kommer dokumenteras av samtliga servrar och backup kommer göras. Nya rutiner för dokumentation kommer krävas av de anställda då det är mycket viktigt
@@ -194,7 +200,7 @@ Först när migreringen är verifierad bör Google-lösningen stängas för akti
 |**Cat6a-kablar (Aqua)**|60|CommScope|3m, SAN & Server-kopplingar|
 |**Installationsfiber**|1 rulle|CommScope|200m, Förbindelse mellan hall 1 och 2|
 
-Övergripande miljökarta
+### 11. Övergripande miljökarta
 
 
 ```mermaid
@@ -315,7 +321,7 @@ flowchart LR
 ```
 
 
-### 11. Backup och återställning 
+### 12. Backup och återställning 
 
 Backup ska genomföras dagligen för viktiga filer, projektdata och systemkonfigurationer. Minst en backupkopia bör vara skyddad mot radering, kryptering eller annan påverkan från den ordinarie servermiljön, till exempel genom offlinebackup eller annan isolerad lagring. 
 Det minskar risken för permanent dataförlust vid tekniska fel, misstag eller säkerhetsincidenter. 
@@ -325,7 +331,7 @@ Det bör också finnas dokumenterade steg för hur IT-personal ska agera vid dat
 
 Återställningstest ska genomföras regelbundet för att säkerställa att backupkopiorna fungerar. En backup är inte tillräcklig om den inte går att återställa inom rimlig tid. Därför ska resultat från återställningstester dokumenteras och följas upp som en del av den löpande driften. 
 
-### 12. Test och acceptans 
+### 13. Test och acceptans 
 
 Innan driftsättning ska lösningen testas både tekniskt och funktionellt. De tekniska testerna ska kontrollera serverstatus, nätverksanslutning, brandvägg, VPN, backup, återställning och loggning. 
 Syftet är att säkerställa att infrastrukturen fungerar stabilt och att viktiga säkerhets- och driftfunktioner är aktiva. 
@@ -336,7 +342,7 @@ Därför bör tester genomföras med konton från olika roller och avdelningar, 
 Acceptanskriterierna bör vara att rätt användare når rätt information, att obehörig åtkomst blockeras, att VPN fungerar för fjärranvändare, att backup och återställning fungerar samt att loggning och driftinstruktioner finns dokumenterade. 
 När dessa kriterier är uppfyllda kan lösningen godkännas för driftsättning. 
 
-### 13. Drift och support enligt ITIL 
+### 14. Drift och support enligt ITIL 
 
 Efter driftsättning ska ITIL användas som stöd för förvaltning av servermiljön. ITIL hjälper DuckTech att arbeta strukturerat med support, incidenter, problem, förändringar och förbättringar. Målet är att miljön ska kunna drivas säkert och stabilt över tid. 
 
@@ -361,7 +367,7 @@ DuckTech bör dokumentera servrar, system, nätverk, konton, grupper och viktiga
 Efter införandet bör DuckTech regelbundet följa upp incidenter, backupresultat, användarnas behov och säkerhetsrutiner. På så sätt kan lösningen förbättras över tid och anpassas efter nya krav från verksamheten. 
 
 
-### 14. Dokumentation och överlämning 
+### 15. Dokumentation och överlämning 
 
 När projektet avslutas ska DuckTech ha teknisk dokumentation över den nya servermiljön. Dokumentationen ska beskriva serverstruktur, filstruktur, behörighetsgrupper, katalogtjänst, backup, VPN, nätverkssäkerhet, loggning och supportflöden. 
 Den ska också innehålla instruktioner för vanliga driftuppgifter, till exempel att skapa användare, ändra behörigheter, hantera grupper och återställa filer från backup. 
@@ -373,7 +379,7 @@ Detta passar både vattenfallsmodellen och ITIL. Vattenfallsmodellen avslutas me
 
  
 
-### 15. Slutsats 
+### 16. Slutsats 
 
 DuckTech bör gå från Google-baserade molntjänster till en lokal servermiljö för att få bättre kontroll över känslig information, behörigheter, backup och drift. 
 Den föreslagna lösningen ger företaget en tydligare teknisk struktur, stärker informationssäkerheten och minskar beroendet av externa molntjänster. 
@@ -381,7 +387,7 @@ Den föreslagna lösningen ger företaget en tydligare teknisk struktur, stärke
 Vattenfallsmodellen ger projektet en tydlig arbetsordning från förstudie och kravanalys till design, implementering, test, driftsättning och överlämning. Det gör migreringen enklare att planera, följa upp och kvalitetssäkra. 
 
 ITIL ger struktur för den fortsatta driften genom service desk, incidenthantering, problemhantering, change management, konfigurationshantering och kontinuerlig förbättring. 
-illsammans ger vattenfallsmodellen och ITIL DuckTech både en plan för införandet och rutiner för att förvalta lösningen säkert och stabilt efteråt. 
+illsammans ger vattenfallsmodellen och ITIL DuckTech både en plan för införandet och rutiner för att förvalta lösningen säkert och stabilt efteråt.
 
 
 
