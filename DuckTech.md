@@ -251,6 +251,7 @@ Först när migreringen är verifierad bör Google-lösningen stängas för akti
 |**Cat6a-kablar (Blå)**|100|CommScope|1.5m, Klientdata/Användare|
 |**Cat6a-kablar (Gul)**|40|CommScope|1.5m, Management (iDRAC)|
 |**Cat6a-kablar (Grön)**|40|CommScope|2m, Backup-nätverk|
+|**Cat6a-kablar (Röd)**|10 rullar|CommScope|Övervakning|
 |**Cat6a-kablar (Aqua)**|60|CommScope|3m, SAN & Server-kopplingar|
 |**Patchpaneler (24-port)**|10|CommScope|Ordning och reda|
 |**Vägguttag (Dubbla)**|100|CommScope|Kontorstillbehör|
