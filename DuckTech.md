@@ -233,7 +233,7 @@ Först när migreringen är verifierad bör Google-lösningen stängas för akti
 
 |Vara|Antal|Modell|Beskrivning|
 |:---|:---|:---|:---|
-|**Servernoder**|10|Dell PowerEdge|5 per serverhall|
+|**Servernoder**|16|Dell PowerEdge|5 per klusternod 3 per management|
 |**Hardware Security Modules**|4|Thales|2 per serverhall|
 |**Lagringschassi**|2|Dell PowerVault ME5024|1 per serverhall|
 |**SSD**|18|3.84TB SSD SAS Mixed Use|För system/cache, 9 per serverhall|
