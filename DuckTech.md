@@ -1,12 +1,13 @@
 # DuckTech - Data Migrering
 
-v. 1.2.5 Datum: 05/05/2026
+v. 1.3.5 Datum: 05/05/2026
 
 <details>
  <summary>Dokuments ändringar </summary>
 
 |**Version**|**Datum**|**Ändring**|**Författare**|
 |:---|:---|:---|:---|
+|1.3.5| 05/05/2026|Ny miljökarat och lagt till GDPR i Säker Dokumentation|Mikael|
 |1.2.5| 05/05/2026|Mindre ändring av text|Mikael|
 |1.2.4| 05/05/2026|Kravlista|Mikael|
 |1.1.4| 04/05/2026|Lite rättstavning|Mikael|
@@ -23,7 +24,7 @@ v. 1.2.5 Datum: 05/05/2026
 **2.** Syfte och mål<br>
 **3.** Kravlista<br>
 **4.** Föreslagen lösning<br>
-**5.** Säker dokumentation<br>
+**5.** Säker dokumentation och GDPR<br>
 **6.** Roller och ansvarsområden<br>
 **7.** Genomförande enligt vattenfallsmodellen<br>
 **8.** Anpassning och utbildning<br>
@@ -120,11 +121,17 @@ ehörigheter ska styras enligt principen minsta möjliga åtkomst, vilket inneb�
 För att lösningen ska vara säker och driftsäker ska backup köras regelbundet och återställning testas. Systemet ska även logga viktiga händelser, till exempel inloggningar, behörighetsändringar och administratörsåtgärder. 
 Servermiljön ska kunna uppdateras och underhållas utan att verksamheten påverkas mer än nödvändigt. 
 
-### 5. Säker dokumentation
+### 5. Säker dokumentation och GDPR
 Djupgående dokumentation kommer ske löpande under projektets gång och efter att projektet är avklarat, uppdatering av dokumentationen när verksamheten utvecklas 
 kommer också vara av stor vikt. Förvaring av dokument ska säkerställas så obehöriga ej får tillgång till dokumentationen, krav: SUA (Säkerhetsskyddad upphandling).
 Serverkonfigurering kommer dokumenteras av samtliga servrar och backup kommer göras. Nya rutiner för dokumentation kommer krävas av de anställda då det är mycket viktigt
 om ändringar sker.
+
+Vid migreringen till en lokal server övertar DuckTech ansvaret som personuppgiftsansvarig utan inblandning av tredje landsleverantörer.<br>
+**Lagring:** All behandling av personuppgifter sker uteslutande inom Sverige.<br>
+**Gallring:** Tekniska rutiner implementeras för automatisk gallring och "rätten att bli bortglömd" i enlighet med dataskyddsförordningen.<br>
+**Loggning:** Systemet konfigureras för att logga åtkomst till personuppgifter, vilket säkerställer spårbarhet vid eventuella personuppgiftsincidenter.<br>
+
  
 ### 6. Roller och ansvarsområden
 
