@@ -6,7 +6,7 @@ v. 1.2.5 Datum: 05/05/2026
  <summary>Dokuments ändringar </summary>
 
 |**Version**|**Datum**|**Ändring**|**Författare**|
-|:---|:---|:---|:---|.
+|:---|:---|:---|:---|
 |1.2.5| 05/05/2026|Mindre ändring av text|Mikael|
 |1.2.4| 05/05/2026|Kravlista|Mikael|
 |1.1.4| 04/05/2026|Lite rättstavning|Mikael|
@@ -312,12 +312,12 @@ flowchart LR
     H1Compute -- "Aqua Cat6a<br/>server/SAN" --> H1Core
     H1Storage -- "Aqua Cat6a<br/>lagring" --> H1Core
     H1HSM -- "Saker systemtrafik" --> H1Core
-    H1Backup -- "Gron Cat6a<br/>backupnat" --> H1Core
+    H1Backup -- "Grön Cat6a<br/>backupnat" --> H1Core
 
     H2Compute -- "Aqua Cat6a<br/>server/SAN" --> H2Core
     H2Storage -- "Aqua Cat6a<br/>lagring" --> H2Core
     H2HSM -- "Saker systemtrafik" --> H2Core
-    H2Backup -- "Gron Cat6a<br/>backupnat" --> H2Core
+    H2Backup -- "Grön Cat6a<br/>backupnat" --> H2Core
 
     H1Core <== "Installationsfiber 200m<br/>interconnect mellan hallar<br/>replikering / kluster / backup" ==> H2Core
 
