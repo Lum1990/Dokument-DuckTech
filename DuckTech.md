@@ -1,12 +1,13 @@
 # DuckTech - Data Migrering
 
-v. 1.2.4 Datum: 05/05/2026
+v. 1.2.5 Datum: 05/05/2026
 
 <details>
  <summary>Dokuments ändringar </summary>
 
 |**Version**|**Datum**|**Ändring**|**Författare**|
-|:---|:---|:---|:---|
+|:---|:---|:---|:---|.
+|1.2.5| 05/05/2026|Mindre ändring av text|Mikael|
 |1.2.4| 05/05/2026|Kravlista|Mikael|
 |1.1.4| 04/05/2026|Lite rättstavning|Mikael|
 |1.1.3| 04/05/2026|Lagt till Jonas dokumentation|Mikael|
@@ -413,25 +414,25 @@ När dessa kriterier är uppfyllda kan lösningen godkännas för driftsättning
 Efter driftsättning ska ITIL användas som stöd för förvaltning av servermiljön. ITIL hjälper DuckTech att arbeta strukturerat med support, incidenter, problem, förändringar och förbättringar. 
 Målet är att miljön ska kunna drivas säkert och stabilt över tid. 
 
-**Service desk** 
+**Service desk** <br>
 Användare ska ha en tydlig kontaktväg för supportärenden. Ärenden kan till exempel handla om inloggning, åtkomst till mappar, VPN-problem eller återställning av filer. 
 Service desk fungerar som första kontaktpunkt och ser till att ärenden registreras, prioriteras och skickas vidare vid behov. 
 
-**Incidenthantering** 
+**Incidenthantering** <br>
 Incidenter ska hanteras snabbt för att återställa normal drift och minska påverkan på verksamheten. Exempel på incidenter är att filservern inte svarar, att en användare inte kommer åt en mapp eller att VPN ligger nere. 
 
-**Problemhantering** 
+**Problemhantering** <br>
 Om samma typ av fel återkommer ska grundorsaken analyseras. Om flera användare ofta får VPN-problem kan orsaken till exempel vara felaktig konfiguration, kapacitetsproblem eller klientprogramvara. 
 Problemhantering minskar risken för att samma incident uppstår igen. 
 
-**Förändringsledning** 
+**Förändringsledning** <br>
 Förändringar i servermiljön ska planeras, riskbedömas och godkännas innan de genomförs. Exempel på förändringar är systemuppdateringar, ändrade behörigheter, ny backupstrategi eller förändringar i nätverket. 
 Det minskar risken för att ändringar skapar nya driftproblem. 
 
-**konfigurationshantering** 
+**Konfigurationshantering** <br>
 DuckTech bör dokumentera servrar, system, nätverk, konton, grupper och viktiga beroenden. Dokumentationen gör felsökning, support, säkerhetsgranskning och framtida ändringar enklare. 
 
-**kontinuerlig förbättring** 
+**Kontinuerlig förbättring**<br>
 Efter införandet bör DuckTech regelbundet följa upp incidenter, backupresultat, användarnas behov och säkerhetsrutiner. På så sätt kan lösningen förbättras över tid och anpassas efter nya krav från verksamheten. 
 
 
