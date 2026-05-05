@@ -238,12 +238,11 @@ Först när migreringen är verifierad bör Google-lösningen stängas för akti
 |**Lagringschassi**|2|Dell PowerVault ME5024|1 per serverhall|
 |**SSD**|18|3.84TB SSD SAS Mixed Use|För system/cache, 9 per serverhall|
 |**HDD**|30|12TB HDD SAS 7.2K|Lagring, 15 per serverhall|
-|**Backupschassi**|1|Dell PowerEdge R750xs|Backup för serverhall 1|
 |**Backup Disk**|16|20TB HDD SAS 7.2K|Backup disk, 8 per serverhall|
 |**Switch**|5|Dell Networking S4112F-ON|2 per serverhall 1 i reserv|
 |**Switch**|7|Dell N2248PX-ON|3 per serverhall 1 i reserv|
 |**Brandvägg**|4|Fortinet FortiGate|2 per serverhall|
-|**Backupschassi**|1|Dell PowerVault ML3|Backup för serverhall 2 med Tape Library med 2x LTO-9 drives|
+|**Backupschassi**|2|Dell PowerVault ML3|Backup med Tape Library med 2x LTO-9 drives|
 |**Off-site lagring**|40|LTO-9 Band (Media)|För off-site lagring/lång tids lagring|
 |**Rackskåp**|2|APC NetShelter SX 42U|1 per serverhall|
 |**PDU**|4|APC Metered Rack PDU|2 per serverhall|
