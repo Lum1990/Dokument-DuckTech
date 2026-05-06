@@ -2,6 +2,8 @@
 
 v. 1.3.5 Datum: 05/05/2026
 
+<details>
+ <summary>Dokuments ändringar </summary>
 
 |**Version**|**Datum**|**Ändring**|**Författare**|
 |:---|:---|:---|:---|
@@ -15,6 +17,7 @@ v. 1.3.5 Datum: 05/05/2026
 |0.1.1| 30/04/2026|La till dokument version|Mikael|
 |0.1.0| 30/04/2026|Dokument skapat|Mikael|
 
+</details>
 
 ## Innehållsförteckning
 **1.** Bakgrund till migrering<br>
@@ -346,7 +349,3 @@ Vattenfallsmodellen ger projektet en tydlig arbetsordning från förstudie och k
 
 ITIL ger struktur för den fortsatta driften genom service desk, incidenthantering, problemhantering, förändringsledning, konfigurationshantering och kontinuerlig förbättring. 
 Tillsammans ger vattenfallsmodellen och ITIL DuckTech både en plan för införandet och rutiner för att förvalta lösningen säkert och stabilt efteråt.
-
-
-
-
